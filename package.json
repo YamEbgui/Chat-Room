@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/YamEbgui/Chat-Room/issues"
   },
-  "homepage": "https://github.com/YamEbgui/Chat-Room#readme"
+  "homepage": "https://github.com/YamEbgui/Chat-Room#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
 }

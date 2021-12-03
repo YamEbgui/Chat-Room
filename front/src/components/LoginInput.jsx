@@ -1,31 +1,30 @@
 import { useRef } from "react";
-import "../style/MessageInput.css";
 
-function MessageInput({ sendFunction }) {
+function LoginInput({ loginFunction }) {
   const inputEl = useRef(null);
 
   return (
-    <div className="messageInput">
+    <div className="loginInputDiv">
       <input
         ref={inputEl}
-        type={"text"}
+        className={"loginInput"}
+        placeholder={"Enter You Username"}
         onKeyPressCapture={(event) => {
           if (event.key === `Enter` && inputEl.current.value)
-            sendFunction(inputEl.current.value);
+            loginFunction(inputEl.current.value);
         }}
-        placeholder={"Enter message - send on Enter"}
       ></input>
       <button
         onClick={() => {
           if (inputEl.current.value) {
-            sendFunction(inputEl.current.value);
+            loginFunction(inputEl.current.value);
           }
         }}
       >
-        send
+        Login
       </button>
     </div>
   );
 }
 
-export default MessageInput;
+export default LoginInput;
