@@ -1,0 +1,17 @@
+.userList {
+  border: 0.6vh groove #ff7426;
+  border-left: none;
+  background-color: rgb(165, 140, 140);
+}
+
+.user {
+  border: #ff7426 0.2vh groove;
+  color: white;
+  border-radius: 19%;
+  background-color: rgb(10, 10, 10);
+  width: 25vw;
+  margin: auto;
+  /* overflow: hidden; */
+  word-wrap: break-word;
+  margin-top: 0.8vh;
+}

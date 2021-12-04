@@ -1,0 +1,58 @@
+.messagesHistory {
+  border: 0.6vh groove #ff7426;
+  border-right: none;
+  overflow: auto;
+  background-color: #0b0b0b;
+  opacity: 0.8;
+  background-color: #0b0b0b;
+  opacity: 0.8;
+  background-color: #0b0b0b;
+  opacity: 0.8;
+  background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #0b0b0b 4px
+    ),
+    repeating-linear-gradient(#ff742655, #ff7426);
+}
+
+.message {
+  /* overflow: hidden; */
+  color: white;
+  background-color: #7c524d;
+  border: black 0.2vh groove;
+  border-radius: 12%;
+  margin-top: 0.5vh;
+  word-wrap: break-word;
+  width: 45vw;
+  margin-left: 8vw;
+  padding: none;
+  text-align: left;
+}
+
+.messageContent {
+  margin-left: 1vh;
+  padding: none;
+  margin: 0.3vh;
+}
+
+::-webkit-scrollbar {
+  width: 2vh;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: gainsboro;
+  border-radius: 1vh;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 3, 14);
+  border-radius: 1vh;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
