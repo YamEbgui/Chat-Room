@@ -18,7 +18,7 @@ function LoginPage() {
 
   return (
     <div className="loginPage">
-      <h1>Cyber Chat</h1>
+      <h1 className="headline">Cyber Chat</h1>
       <LoginInput loginFunction={loginFunction} />
     </div>
   );

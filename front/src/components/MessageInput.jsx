@@ -13,9 +13,10 @@ function MessageInput({ sendFunction }) {
           if (event.key === `Enter` && inputEl.current.value)
             sendFunction(inputEl.current.value);
         }}
-        placeholder={"Enter message - send on Enter"}
+        placeholder={"Enter message here"}
       ></input>
       <button
+        className="button-78"
         onClick={() => {
           if (inputEl.current.value) {
             sendFunction(inputEl.current.value);

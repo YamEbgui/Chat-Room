@@ -9,7 +9,6 @@ function MessagesHistory({ MessagesArray }) {
           <Message
             username={message.username}
             content={message.content}
-            time={message.time}
           ></Message>
         );
       })}

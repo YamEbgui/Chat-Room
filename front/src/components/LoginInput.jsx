@@ -7,7 +7,7 @@ function LoginInput({ loginFunction }) {
     <div className="loginInputDiv">
       <input
         ref={inputEl}
-        className={"loginInput"}
+        className={"loginInput "}
         placeholder={"Enter You Username"}
         onKeyPressCapture={(event) => {
           if (event.key === `Enter` && inputEl.current.value)
@@ -15,6 +15,7 @@ function LoginInput({ loginFunction }) {
         }}
       ></input>
       <button
+        className="button-78"
         onClick={() => {
           if (inputEl.current.value) {
             loginFunction(inputEl.current.value);

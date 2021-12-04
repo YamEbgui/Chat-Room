@@ -1,8 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap");
+body {
+  background: rgba(8, 8, 8, 0.527);
+}
 .chatroom {
+  margin-top: 8vh;
   font-family: "Open Sans", cursive;
+  font-size: 3vh;
   text-align: center;
   display: grid;
-  grid-template-columns: 50vw 30vw;
-  grid-template-rows: 50vh 20vh;
+  grid-template-columns: 60vw 35vw;
+  grid-template-rows: 60vh 20vh;
 }
