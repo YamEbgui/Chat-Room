@@ -4,6 +4,7 @@ const userRouter = express.Router();
 
 userRouter.post("/login", async (req, res) => {
   const username = req.body.username;
+  console.log(req.body);
   Users.find({ username: `${username}` }).then((result) => {
     if (result.length > 0) res.status(403).send("Username already exist");
     else {

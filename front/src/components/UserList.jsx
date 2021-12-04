@@ -6,7 +6,7 @@ function UserList({ usersArray }) {
   return (
     <div className="userList">
       {usersArray.map((user) => {
-        return <User username={user} />;
+        return <User username={user.username} />;
       })}
     </div>
   );

@@ -2,12 +2,15 @@ const express = require("express");
 const cors = require("cors");
 const userRouter = require("./routes/users");
 const messageRouter = require("./routes/messages");
+const fetchRouter = require("./routes/fetch");
 const app = express();
 const users = [];
 const messages = [];
 
 app.use(cors());
 app.use(express.json());
+
+app.use("/fetch", fetchRouter);
 
 app.use("/user", userRouter);
 

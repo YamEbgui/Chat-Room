@@ -8,33 +8,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" exact element={<LoginPage />}></Route>
-        <Route
-          path="/chat"
-          exact
-          element={
-            <Chatroom
-              usersArray={["yam", "david", "daniel"]}
-              MessagesArray={[
-                { username: "yam", content: "fuck my life", time: Date.now() },
-              ]}
-            />
-          }
-        ></Route>
+        <Route path="/chat" exact element={<Chatroom />}></Route>
       </Routes>
-
-      {/* <Chatroom
-        usersArray={["yam", "david", "daniel"]}
-        MessagesArray={[
-          { username: "yam", content: "fuck my life", time: Date.now() },
-        ]}
-      />
-
-      <LoginPage
-        loginFunction={(a) => {
-          console.log(a);
-          alert(a);
-        }}
-      /> */}
     </BrowserRouter>
   );
 }

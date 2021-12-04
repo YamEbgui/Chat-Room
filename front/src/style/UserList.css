@@ -1,3 +1,12 @@
 .userList {
   border: hotpink 1vh solid;
 }
+
+.user {
+  border: black 0.2vh currentColor;
+  border-radius: 19%;
+  background-color: cadetblue;
+  /* overflow: hidden; */
+  word-wrap: break-word;
+  margin: auto;
+}
